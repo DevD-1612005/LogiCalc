@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LogiCalc</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🧠 LogiCalc</h1>
+
+    <div class="calc-box">
+      <input type="number" id="input1" placeholder="First number" />
+      <select id="operation">
+        <option value="+">+</option>
+        <option value="-">−</option>
+        <option value="*">×</option>
+        <option value="/">÷</option>
+      </select>
+      <input type="number" id="input2" placeholder="Second number" />
+
+      <button onclick="calculate()">= Calculate</button>
+      <div id="result" class="result">Result: </div>
+    </div>
+
+    <h2>📜 History</h2>
+    <ul id="historyList" class="history-list"></ul>
+    <button id="clearBtn" onclick="clearHistory()">🗑️ Clear All History</button>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

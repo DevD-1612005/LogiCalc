@@ -1,0 +1,95 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(to bottom right, #f0f4ff, #dfe9f3);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.calc-box input,
+.calc-box select,
+.calc-box button {
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.calc-box input:focus,
+.calc-box select:focus {
+  border-color: #0077ff;
+  outline: none;
+}
+
+button {
+  background-color: #0077ff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005fcc;
+}
+
+.result {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.history-list {
+  text-align: left;
+  list-style-type: none;
+  padding: 0;
+  max-height: 200px;
+  overflow-y: auto;
+  margin-top: 10px;
+}
+
+.history-list li {
+  background: #f4f4f4;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+
+.history-list li:hover {
+  transform: scale(1.02);
+  background: #e8f0ff;
+}
+#clearBtn {
+  margin-top: 10px;
+  background-color: #ff4d4d;
+  border: none;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#clearBtn:hover {
+  background-color: #d63031;
+}
